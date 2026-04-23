@@ -67,6 +67,12 @@ export function MemoryAnchors() {
       <div className="text-center">
         <h2 className="text-2xl font-bold text-anchor-700 mb-2">Memory Anchors</h2>
         <p className="text-sage-600">Daily word recall exercise</p>
+        <button 
+          onClick={generateNewWords}
+          className="mt-3 text-sm text-anchor-600 hover:text-anchor-800 underline"
+        >
+          Generate New Words Now
+        </button>
       </div>
 
       {phase === "morning" && (
