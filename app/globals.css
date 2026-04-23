@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-sand-50 text-sage-800;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.btn-primary {
+  @apply bg-anchor-500 text-white font-semibold py-4 px-8 rounded-2xl text-xl
+         hover:bg-anchor-600 active:scale-95 transition-all shadow-lg;
+  min-height: 56px;
+}
+
+.btn-secondary {
+  @apply bg-sage-100 text-sage-700 font-semibold py-4 px-8 rounded-2xl text-xl
+         hover:bg-sage-200 active:scale-95 transition-all;
+  min-height: 56px;
+}
+
+.card {
+  @apply bg-white rounded-3xl shadow-md p-6;
+}
+
+.input-large {
+  @apply w-full p-4 text-xl rounded-xl border-2 border-sage-200 
+         focus:border-anchor-400 focus:outline-none;
+  min-height: 56px;
+}
+
+.nav-item {
+  @apply flex flex-col items-center gap-1 py-2 px-3 rounded-xl
+         text-sage-600 hover:text-anchor-600 hover:bg-anchor-50 transition-all;
+}
+
+.nav-item.active {
+  @apply text-anchor-600 bg-anchor-50;
+}
